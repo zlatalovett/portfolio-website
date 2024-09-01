@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header class="header" id="home">
         <a href="#home" class="logo-link">
             <img class="logo" src="../My website/images/asterisk.svg" alt="Logo">
-        
         </a>
         <nav class="navigation-bar">
+            <a href="#about" class="nav-item">
+                <img src="../My website/images/emoji-smile-upside-down.svg" alt="About">
+                <span class="nav-text">About</span>
+            </a>
             <a href="#work" class="nav-item">
                 <img src="../My website/images/briefcase.svg" alt="Work">
                 <span class="nav-text">Work</span>
             </a>
-            <a href="#About" class="nav-item">
-                <img src="../My website/images/emoji-smile-upside-down.svg" alt="About">
-                <span class="nav-text">About</span>
-            </a>
             <a href="#clients" class="nav-item">
-                <img src="../My website/images/emoji-laughing.svg" alt="clients">
+                <img src="../My website/images/emoji-laughing.svg" alt="Clients">
                 <span class="nav-text">Clients</span>
             </a>
             <a href="#socials" class="nav-item">
@@ -33,54 +34,112 @@
             </a>
         </nav>
     </header>
-<section id="work">
-<div></div>
-</section>
 
-<section id="About">
-<div class="About-section">
-    <div class="about-container">
-    <img src="../My website/images/1695758579297.jpeg" class="about-photo">
-    <h1> Hi, I'm Zlata</h1>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta sem ac orci tincidunt dictum. Suspendisse sit amet ornare lorem, et posuere ante. Vivamus consequat posuere nunc, sed sodales elit tristique nec. Nulla elementum commodo consequat.
-    </p>
-    <h2>Technologies and Tools</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta sem ac orci tincidunt dictum.</p>
-    <img src="../My website/images/filetype-html.svg"> <img src="../My website/images/filetype-css.svg"> <img src="../My website/images/bootstrap.svg">
-   <br>
-    <img src="../My website/images/loading.gif" class="loading-bar"> 
-    <br>
-    <ul>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Git</li>
-        <li>MySQl</li>
-        <li>Express</li>
-    </ul>
-</div>
-</div>
-</section>
-
-<section id="clients">
-    <div class="row">
-        <div class="col-md-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>"Some representative placeholder content for the three columns of text below the carousel. This is the first column."</p>
-     
+    <section id="about" class="about">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="../My website/images/1695758579297.jpeg" id="about-picture" class="d-block mx-lg-auto img-fluid" alt="Profile picture" width="300" height="200" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                        <span class="hi">Hi,</span> I'm Zlata
+                    </h1>
+                    <p class="lead">I am a Front-End Developer based in Ireland with a solid foundation in HTML, CSS, and Bootstrap.</p>
+                    <h2>Technologies and Tools</h2>
+                    <p>I have hands-on experience with HTML, CSS, and Bootstrap, which I use to create responsive and visually appealing web pages. Currently, I am expanding my skills and studying to become a Full-Stack Developer.</p>
+                    <a href="#home" class="btn btn-info">Take me home</a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>"Another exciting bit of representative placeholder content. This time, we've moved on to the second column."</p>
-          
-      </div>
-</section>
-<div></div>
-<section id="Socials">
+    </section>
 
-</section>
+    <section id="work">
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+            <div class="text-bg-info me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5">First project</h2>
+                    <p class="lead">And an even wittier subheading.</p>
+                </div>
+                <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+            </div>
+            <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+                    <h2 class="display-5">Second Project</h2>
+                    <p class="lead">And an even wittier subheading.</p>
+                </div>
+                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+            </div>
+            <div class="text-bg-info me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 py-3">
+                    <h2 class="display-5">Third project</h2>
+                    <p class="lead">And an even wittier subheading.</p>
+                </div>
+                <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="#home" class="btn btn-light">Take me home</a>
+        </div>
+    </section>
+
+    <section id="clients" class="clients">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="../My website/images/young-girl-icon.svg" alt="Description of image 1" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                <h2 class="fw-normal">Jane Doe</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum erat quis arcu mollis tristique."</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="../My website/images/business-man-icon.svg" alt="Description of image 2" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                <h2 class="fw-normal">John Doe</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum erat quis arcu mollis tristique."</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="../My website/images/elderly-grandmother-icon.svg" alt="Description of image 3" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                <h2 class="fw-normal">Gina Doe</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum erat quis arcu mollis tristique."</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="#home" class="btn btn-info">Take me home</a>
+        </div>
+    </section>
+
+    <section id="socials">
+        <div class="d-flex gap-2 justify-content-center pb-5">
+            <a href="https://www.instagram.com/zlata_lovett/?hl=en" target="_blank" class="btn btn-light rounded-circle p-3 lh-1">
+                <img src="../My website/images/instagram.svg" alt="Instagram Icon" width="24" height="24">
+                <span class="visually-hidden">Instagram</span>
+            </a>
+            <a href="https://www.linkedin.com/in/zlatoslava-lovett-6899b8279/" target="_blank" class="btn btn-light rounded-circle p-3 lh-1">
+                <img src="../My website/images/linkedin.svg" alt="LinkedIn Icon" width="24" height="24">
+                <span class="visually-hidden">LinkedIn</span>
+            </a>
+            <a href="https://github.com/zlatalovett" target="_blank" class="btn btn-light rounded-circle p-3 lh-1">
+                <img src="../My website/images/github.svg" alt="GitHub Icon" width="24" height="24">
+                <span class="visually-hidden">GitHub</span>
+            </a>
+            <a href="t.me/Zlatalovett" target="_blank" class="btn btn-light rounded-circle p-3 lh-1">
+                <img src="../My website/images/telegram.svg" alt="Telegram Icon" width="24" height="24">
+                <span class="visually-hidden">Telegram</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">About</a></li>
+                    <li class="nav-item"><a href="#work" class="nav-link px-2 text-body-secondary">Work</a></li>
+                    <li class="nav-item"><a href="#clients" class="nav-link px-2 text-body-secondary">Clients</a></li>
+                    <li class="nav-item"><a href="#socials" class="nav-link px-2 text-body-secondary">Socials</a></li>
+                </ul>
+                <p class="text-center text-body-secondary">© 2024 Zlata Lovett</p>
+            </footer>
+        </div>
+    </section>
 </body>
 </html>
