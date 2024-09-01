@@ -86,6 +86,10 @@ p, li, span {
 }
 
 /* Section Styles */
+
+#about-picture{
+    border-radius: 50%;
+}
 .about, .clients {
     background-color: rgb(233, 233, 233);
     border-radius: 20px;
